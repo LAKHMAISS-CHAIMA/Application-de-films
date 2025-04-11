@@ -5,6 +5,7 @@ import Header from './components/Header';
 import Home from './pages/Home';
 import MovieDetails from './components/MovieDetails';
 import FavorisMovie from './components/FavorisMovie';
+import Footer from "../components/Footer";
 
 function App() {
   const [type, setType] = useState('movie');         
@@ -31,6 +32,7 @@ function App() {
         <Route path="/movie/:id" element={<MovieDetails />} />
         <Route path="/favoris" element={<FavorisMovie />} />
       </Routes>
+      <Footer />
     </div>
   );
 }
