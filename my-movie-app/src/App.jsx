@@ -5,7 +5,7 @@ import Header from './components/Header';
 import Home from './pages/Home';
 import MovieDetails from './components/MovieDetails';
 import FavorisMovie from './components/FavorisMovie';
-import Footer from "../components/Footer";
+import Footer from "./components/footer";
 
 function App() {
   const [type, setType] = useState('movie');         

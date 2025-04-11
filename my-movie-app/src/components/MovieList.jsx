@@ -23,8 +23,8 @@ function MovieList({ type = 'movie', searchTerm = '', filter = 'popular' }) {
           data = await getFilteredMovies(currentFilter, type);
         }
 
-        if (data && data.Response === 'True') {
-          setMovies(data.Search || []);
+        if (data && data.Search && data.Search.length > 0) {
+          setMovies(data.Search);
         } else {
           setMovies([]);
           setError(data?.Error || 'Aucun film trouvé');
